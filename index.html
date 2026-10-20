@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The portfolio of Nazario Divaio, a Multimedia Computing student exploring graphic design, UI/UX and programming.">
+  <meta name="theme-color" content="#101114">
+  <title> Nazario Divaio Portfolio — Design / Code / Play</title>
+
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Nazario Divaio home">ND<span>_</span></a>
+    <p class="sidebar-label">DESIGN / CODE / PLAY</p>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-expanded="false" aria-controls="mainNav">
+      MENU <span aria-hidden="true">+</span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <p class="nav-heading">SELECT A SECTION</p>
+      <a class="nav-link active" href="#home" aria-current="location">
+        <span class="nav-number">01</span> START
+      </a>
+      <a class="nav-link" href="#projects">
+        <span class="nav-number">02</span> PROJECTS
+      </a>
+      <a class="nav-link" href="#about">
+        <span class="nav-number">03</span> PLAYER INFO
+      </a>
+      <a class="nav-link" href="#contact">
+        <span class="nav-number">04</span> CONTACT
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="status-dot"></span>
+      PORTFOLIO ONLINE
+    </div>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section class="section hero" id="home">
+      <div class="section-label">
+        <span>PORTFOLIO / PLAYER 001</span>
+        <span id="localTime">SARAWAK / --:--</span>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">MULTIMEDIA COMPUTING / UNIMAS</p>
+        <p class="pixel-label"><span class="status-dot"></span> CURRENTLY BUILDING</p>
+
+        <h1>NAZARIO<br>DIVAIO<br>PORTFOLIO<span class="accent-dot">_</span></h1>
+
+        <p class="hero-description">
+          I build interfaces, design visuals, and experiment with code.
+          Currently studying Multimedia Computing at UNIMAS in Sarawak.
+          Most of my work sits somewhere between graphic design and
+          technology—and I'm still figuring out where I want to take it next.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            EXPLORE MY WORK <span aria-hidden="true">↘</span>
+          </a>
+          <a class="text-link" href="#about">GET TO KNOW ME <span>↘</span></a>
+        </div>
+      </div>
+
+      <div class="arcade-status">
+        <div>
+          <span class="status-key">AREA_01</span>
+          <strong>GRAPHIC DESIGN</strong>
+        </div>
+        <div>
+          <span class="status-key">AREA_02</span>
+          <strong>UI / UX</strong>
+        </div>
+        <div>
+          <span class="status-key">AREA_03</span>
+          <strong>PROGRAMMING</strong>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>SAMARAHAN, SARAWAK, MALAYSIA</span>
+        <a href="#projects">SCROLL TO EXPLORE ↓</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects-section" id="projects">
+      <div class="section-label">
+        <span>STAGE 01 / SELECTED WORK</span>
+        <span>ACADEMIC + CREATIVE + EXPERIMENT</span>
+      </div>
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THINGS I'VE WORKED ON</p>
+          <h2>MADE BY<br>EXPERIMENTING<span class="accent-dot">_</span></h2>
+        </div>
+        <p class="section-intro">
+          Five projects from design work, university assignments,
+          and experiments with interactive technology. Each one taught
+          me something different. Akan bertambah after this draft , the idea is I want to make each box into a grouping like Graphic design sendiri,game development sendiri, web application sendiri, mobile apps sendiri...so bila di tekan each box nanti akan auto ke other html yang focus on showing my project dari each group and menu di sana nanti only show home or any back button.
+        </p>
+      </div>
+
+      <div class="project-filters" aria-label="Filter projects">
+        <button class="filter-button active" data-filter="all"
+          aria-pressed="true" type="button">ALL / 05</button>
+        <button class="filter-button" data-filter="design"
+          aria-pressed="false" type="button">DESIGN</button>
+        <button class="filter-button" data-filter="development"
+          aria-pressed="false" type="button">DEVELOPMENT</button>
+        <button class="filter-button" data-filter="uiux"
+          aria-pressed="false" type="button">UI / UX</button>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card project-featured" data-category="development">
+          <div class="project-visual visual-game">
+            <span class="visual-index">PROJECT_01 / DEVELOPMENT</span>
+            <div class="block-art blocks-four" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="game-screen" aria-hidden="true">
+              <div class="game-screen-top"><span>BLOCK SYSTEM</span><span>01:00</span></div>
+              <div class="game-board">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <span class="game-screen-bottom">BUILD / TEST / REPEAT</span>
+            </div>
+            <span class="visual-caption">LOGIC INTO INTERACTION</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta"><span>GAME DEVELOPMENT</span><span>ACADEMIC</span></div>
+            <h3>Tetris & Arcade Game</h3>
+            <p>
+              A programming project exploring game logic, graphical rendering,
+              and player interaction with C++ and OpenGL.
+            </p>
+            <button class="project-details-toggle" type="button"
+              aria-expanded="false" aria-controls="projectDetails1">
+              PROJECT NOTES <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="projectDetails1" hidden>
+              <p><strong>What I explored:</strong> input handling, game states,
+                object movement, and graphical rendering.</p>
+              <p><strong>Tools:</strong> C++ and OpenGL.</p>
+              <p><strong>Next step:</strong> Space where aku akan add a real gameplay screenshot and
+                explain one technical challenge I personally solved.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card project-poster" data-category="design">
+          <div class="project-visual visual-poster">
+            <span class="visual-index">PROJECT_02 / VISUAL DESIGN</span>
+            <div class="block-art blocks-one" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="visual-title"><br>VISUAL<br>COMMUNICATION</span>
+            <span class="visual-caption">INFOGRAPHICS / SOCIAL MEDIA</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>GRAPHIC DESIGN</span><span>2026</span></div>
+            <h3>Visual Communication & Infographics</h3>
+            <p>Educational infographics and promotional posters created for Rune Codes Academy.</p>
+            <button class="project-details-toggle" type="button"
+              aria-expanded="false" aria-controls="projectDetails2">
+              PROJECT NOTES <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="projectDetails2" hidden>
+              <p><strong>Focus:</strong> visual hierarchy, typography, and presenting information clearly.</p>
+              <p><strong>Tools:</strong> Photoshop, Illustrator, and Canva.</p>
+              <p>poster amai yang aku : a real poster image and describe one design decision behind it.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card project-publicity" data-category="design">
+          <div class="project-visual visual-publicity">
+            <span class="visual-index">PROJECT_03 / EVENT MEDIA</span>
+            <div class="block-art blocks-two" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="visual-title">EVENT<br>IDENTITY</span>
+            <span class="visual-caption">MEDIA / PUBLICITY</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>EVENT DESIGN</span><span>2025–26</span></div>
+            <h3>PERTEKMA Media & Publicity</h3>
+            <p>Event background templates and publicity materials for student events and workshops.</p>
+            <button class="project-details-toggle" type="button"
+              aria-expanded="false" aria-controls="projectDetails3">
+              PROJECT NOTES <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="projectDetails3" hidden>
+              <p><strong>Role:</strong> Designer, Secretariat Exco Media & Publicity.</p>
+              <p><strong>Focus:</strong> consistent event visuals and clear publicity materials.</p>
+              <p>poster amai yang aku :: Add examples of event work that you have permission to publish.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card project-art" data-category="uiux">
+          <div class="project-visual visual-art">
+            <span class="visual-index">PROJECT_04 / HUMAN-CENTRED DESIGN</span>
+            <div class="interface-art" aria-hidden="true">
+              <div class="interface-bar"></div>
+              <div class="interface-map"><span></span><span></span><span></span></div>
+              <div class="interface-row"></div>
+              <div class="interface-row short"></div>
+            </div>
+            <span class="visual-title">SARAWAK<br>ART</span>
+            <span class="visual-caption">RESEARCH / WIREFRAMES</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>UI / UX</span><span>ACADEMIC</span></div>
+            <h3>Sarawak ART App</h3>
+            <p>An HCI project exploring a digital experience for users of Sarawak's ART transport service.</p>
+            <button class="project-details-toggle" type="button"
+              aria-expanded="false" aria-controls="projectDetails4">
+              PROJECT NOTES <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="projectDetails4" hidden>
+              <p><strong>Process:</strong> user interviews, personas, and interface wireframes.</p>
+              <p><strong>Tool:</strong> Figma.</p>
+              <p>WF amai yang aku : Add your actual wireframes and a lesson learned from the user research.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card project-kiosk" data-category="uiux">
+          <div class="project-visual visual-kiosk">
+            <span class="visual-index">PROJECT_05 / INTERFACE DESIGN</span>
+            <div class="kiosk-art" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="visual-title">CAMPUS<br>MARKET</span>
+            <span class="visual-caption">BUY / SELL / CONNECT</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>UI / UX</span><span>ACADEMIC</span></div>
+            <h3>Faculty Kiosk Buy-and-Sell System</h3>
+            <p>A Figma interface concept exploring buying and selling opportunities within a university community.</p>
+            <button class="project-details-toggle" type="button"
+              aria-expanded="false" aria-controls="projectDetails5">
+              PROJECT NOTES <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="projectDetails5" hidden>
+              <p><strong>Focus:</strong> interface structure, user flows, and organising marketplace information.</p>
+              <p><strong>Tool:</strong> Figma.</p>
+              <p>prototype amai yang aku empu : real prototype and explain the problem the proposed interface addresses.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="project-footnote">
+        NOTE: Decorative previews are original CSS illustrations. They are not screenshots of the finished projects. Will tambah" again in the future lebih gik extra html untuk setiap project and will update again using layout with fixed navigation
+      </p>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="section-label">
+        <span>PLAYER INFO </span>
+       
+      </div>
+      <p class="project-footnote">
+         WILL BE UPDATE AGAIN using magazine layout
+      </p>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A LITTLE CONTEXT</p>
+          <h2>THE PERSON<br>BEHIND THE PIXELS<span class="accent-dot">_</span></h2>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-intro">
+          <div class="profile-panel">
+            <span class="profile-code">PLAYER_001 / SARAWAK</span>
+            <div class="profile-monogram" aria-hidden="true">ND<span>_</span></div>
+            <p class="profile-role">GRAPHIC DESIGNER / MULTIMEDIA STUDENT</p>
+            <p class="profile-location">SAMARAHAN, SARAWAK, MALAYSIA</p>
+          </div>
+
+          <h3 class="about-lead">I like making things people can see, use, and understand.</h3>
+          <p>
+            I'm studying Computer Science and Information Technology,
+            specialising in Multimedia Computing at Universiti Malaysia Sarawak.
+          </p>
+          <p>
+            My experience includes graphic design, event publicity,
+            UI/UX concepts, and programming projects. Design is where I
+            started then coding gives me another way to explore new ideas.
+          </p>
+          <p>
+            I'm still learning which parts of technology I want to pursue
+            further. For now, I enjoy trying things, solving problems,
+            and understanding why a solution works.
+          </p>
+
+          <a class="text-link"
+            href="https://www.linkedin.com/in/nazario-divaio-noel"
+            target="_blank" rel="noopener noreferrer">
+            FIND ME ON LINKEDIN <span>↗</span>
+          </a>
+
+        <div class="about-details">
+          <div class="detail-block">
+            <p class="detail-label">01 / DESIGN</p>
+            <p class="skill-list">Graphic design, infographics, typography, social media content, event publicity, photography.</p>
+          </div>
+
+          <div class="detail-block">
+            <p class="detail-label">02 / UI & UX</p>
+            <p class="skill-list">Figma, wireframing, interface design, user flows, Human-Computer Interaction.</p>
+          </div>
+
+          <div class="detail-block">
+            <p class="detail-label">03 / DEVELOPMENT</p>
+            <p class="skill-list">C++, OpenGL, PHP, MySQL, HTML, CSS, JavaScript.</p>
+          </div>
+
+          <div class="detail-block">
+            <p class="detail-label">04 / EDUCATION</p>
+            <h3>Bachelor of Computer Science & Information Technology</h3>
+            <p>Multimedia Computing with Honours<br>Universiti Malaysia Sarawak<br>October 2024 – Present</p>
+            <h3>Diploma in Computer Science & Mathematics</h3>
+            <p>UiTM Sarawak<br>March 2021 – September 2023</p>
+          </div>
+
+          <div class="detail-block">
+            <p class="detail-label">05 / EXPERIENCE</p>
+            <h3>Freelance Graphic Designer</h3>
+            <p>Rune Codes Academy · Jan–Feb 2026</p>
+            <h3>Designer, Media & Publicity Secretariat</h3>
+            <p>PERTEKMA · Feb 2025–Jan 2026</p>
+            <h3>Administrative Assistant, Borneo Region</h3>
+            <p>FJKT48 Malaysia Official Fanbase · Dec 2023–Mar 2025</p>
+            <h3>Social Media Designer</h3>
+            <p>AIESEC in Kuching · Oct 2024–Apr 2025</p>
+            <h3>Media Ministry Designer</h3>
+            <p>HOPE Church Kota Samarahan · Apr 2025–Present</p>
+          </div>
+
+          <div class="detail-block">
+            <p class="detail-label">06 / LANGUAGES</p>
+            <p class="skill-list">English, Malay, Iban, Mandarin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="section-label">
+        <span>PLAYER CONNECTION</span>
+        <span>END OF LEVEL / NEXT?</span>
+      </div>
+
+      <div class="contact-content">
+        <p class="eyebrow">HAVE SOMETHING IN MIND?</p>
+        <h2>LET'S SEE<br>WHAT WE CAN<br>MAKE<span class="accent-dot">_</span></h2>
+        <p class="contact-description">
+          Have a project, a design opportunity, or an idea worth discussing?
+          Send me a message.
+        </p>
+
+        <a class="button button-primary" href="mailto:nazariodivaio@gmail.com">
+          EMAIL ME <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="contact-links">
+          <a href="mailto:nazariodivaio@gmail.com">nazariodivaio@gmail.com</a>
+          <a href="https://www.linkedin.com/in/nazario-divaio-noel"
+            target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-mark">ND<span>_</span></p>
+    <p>DESIGNED, BUILT, AND STILL IN PROGRESS.</p>
+    <p>© <span id="currentYear">2026</span> NAZARIO DIVAIO</p>
+  </footer>
+
+  <!-- Display controls -->
+  <div class="utility-controls">
+    <button class="theme-toggle" id="themeToggle" type="button"
+      aria-label="Switch to light theme" aria-pressed="false">
+      ☼ LIGHT MODE
+    </button>
+    <button class="back-to-top" id="backToTop" type="button"
+      aria-label="Back to top" hidden>↑ TOP</button>
+  </div>
+</body>
+</html>
