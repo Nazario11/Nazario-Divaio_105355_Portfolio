@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0b">
+  <meta name="description" content="Web Applications projects by Nazario Divaio.">
+  <title>Web Applications — Nazario Divaio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#categoryHome">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Return to portfolio homepage">
+      <span class="wordmark">N<span>.</span>D</span>
+      <span class="sidebar-label">DESIGN / CODE / PLAY</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation menu">
+      MENU <span aria-hidden="true">+</span>
+    </button>
+    <nav class="main-nav category-nav" id="mainNav" aria-label="Category navigation">
+      <p class="nav-heading">CURRENT LEVEL</p>
+      <a class="nav-link active" href="#categoryHome"><span class="nav-number">01</span> WEB ARCHIVE</a>
+      <a class="nav-link" href="../index.html#projects"><span class="nav-number">02</span> ALL CATEGORIES</a>
+    </nav>
+    <div class="sidebar-footer"><span class="status-dot" aria-hidden="true"></span><span>ARCHIVE / WEB</span></div>
+  </header>
+  <main>
+    <section class="section hero category-hero" id="categoryHome" aria-labelledby="categoryTitle">
+      <div class="section-label"><span>PROJECT ARCHIVE</span><span>WEB SYSTEMS</span></div>
+      <div class="hero-content">
+        <p class="eyebrow">CATEGORY / WEB</p>
+        <h1 id="categoryTitle">Web<br>Applications<span class="accent-dot">.</span></h1>
+        <p class="category-intro">Websites and functional digital systems, with attention to structure, responsive layouts and clear user journeys.</p>
+        <a class="back-link" href="../index.html#projects">← BACK TO ALL CATEGORIES</a>
+      </div>
+      <div class="hero-bottom"><span>PROJECT ARCHIVE</span></div>
+    </section>
+    <section class="section" aria-labelledby="archiveTitle">
+      <div class="section-label"><span>SELECTED WORK</span><span>03 PROJECT ENTRIES</span></div>
+      <div class="section-heading">
+        <div><p class="eyebrow">THE ARCHIVE</p><h2 id="archiveTitle">WORK IN<br>PROGRESS<span class="accent-dot">.</span></h2></div>
+      </div>
+      <div class="project-list">
+      <article class="case-card">
+        <div class="case-art" aria-label="Stylised project title preview"><span>Personal Portfolio Website</span></div>
+        <div class="case-content">
+          <p class="project-tag">01 / WEB</p>
+          <h2>Personal Portfolio Website</h2>
+          <p><strong>HTML / CSS / JavaScript</strong></p>
+          <p>This portfolio is built with vanilla HTML, CSS and JavaScript.</p>
+          <p class="case-meta">FOCUS: Frontend · Responsive design · Accessibility</p>
+        </div>
+      </article>
+      <article class="case-card">
+        <div class="case-art" aria-label="Stylised project title preview"><span>CareerPath</span></div>
+        <div class="case-content">
+          <p class="project-tag">02 / WEB</p>
+          <h2>CareerPath</h2>
+          <p><strong>Student career development prototype</strong></p>
+          <p>A prototype concept connecting student skill records and career goals with relevant opportunities.</p>
+          <p class="case-meta">FOCUS: AppSheet · Data modelling · Workflow design</p>
+        </div>
+      </article>
+      <article class="case-card">
+        <div class="case-art" aria-label="Stylised project title preview"><span>SarawakMart</span></div>
+        <div class="case-content">
+          <p class="project-tag">03 / WEB</p>
+          <h2>SarawakMart</h2>
+          <p><strong>Local marketplace proposal</strong></p>
+          <p>A marketplace concept for Sarawak local products.</p>
+          <p class="case-meta">FOCUS: Web marketplace · Requirements · UX</p>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="section-label"><span>KEEP IN TOUCH</span><span>END OF ARCHIVE</span></div>
+      <div class="contact-content">
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+        <h2>LET'S MAKE<br>SOMETHING<span class="accent-dot">.</span></h2>
+        <p class="contact-description">For collaboration or project enquiries, get in touch by email.</p>
+        <a class="button button-primary" href="mailto:nazariodivaio@gmail.com">EMAIL ME ↗</a>
+        <div class="contact-links"><a href="../index.html">HOME</a><a href="mailto:nazariodivaio@gmail.com">NAZARIODIVAIO@GMAIL.COM</a><button class="copy-email" type="button" data-copy-email="nazariodivaio@gmail.com">COPY EMAIL <span aria-hidden="true">↗</span></button><span class="copy-email-status" role="status" aria-live="polite" hidden></span><a href="https://www.linkedin.com/in/nazario-divaio-noel" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><p class="footer-mark">N<span>.</span>D</p><p>NAZARIO DIVAIO · <span id="currentYear">2026</span></p><p>WEB / ARCHIVE</p></footer>
+  <div class="utility-controls"><button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">☼ LIGHT MODE</button><button class="back-to-top" id="backToTop" type="button" hidden>↑ BACK TO TOP</button></div>
+</body>
+</html>

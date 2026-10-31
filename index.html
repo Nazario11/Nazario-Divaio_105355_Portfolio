@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0b">
+  <meta name="description" content="Portfolio of Nazario Divaio — Multimedia Computing student exploring graphic design, UI/UX, web development and interactive experiences.">
+  <title>Nazario Divaio Portfolio </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Nazario Divaio — homepage">
+      <span class="wordmark">N<span>.</span>D</span>
+      <span class="sidebar-label">DESIGN / CODE / PLAY</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mainNav" aria-expanded="false">
+      MENU <span aria-hidden="true">+</span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <p class="nav-heading">SELECT DESTINATION</p>
+      <a class="nav-link active" href="#home"><span class="nav-number">01</span> HOME</a>
+      <a class="nav-link" href="#projects"><span class="nav-number">02</span> PROJECTS</a>
+      <a class="nav-link" href="#about"><span class="nav-number">03</span> ABOUT</a>
+      <a class="nav-link" href="#contact"><span class="nav-number">04</span> CONTACT</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>PORTFOLIO SYSTEM ONLINE</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero" id="home" aria-labelledby="heroTitle">
+      <div class="section-label">
+        <span>PORTFOLIO / PLAYER 001</span>
+        <span>INDEPENDENT CREATIVE BUILD</span>
+      </div>
+
+      <div class="hero-content">
+        <p class="pixel-label"><span class="status-dot" aria-hidden="true"></span> MULTIMEDIA COMPUTING STUDENT</p>
+        <p class="eyebrow">HELLO, WORLD. I'M</p>
+        <h1 id="heroTitle">NAZARIO<br>DIVAIO<span class="accent-dot">.</span></h1>
+        <p class="hero-description">A Multimedia Computing student exploring the space between visual design, user experience and interactive technology. I turn ideas into visuals, interfaces and experiments worth exploring.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">EXPLORE MY WORK <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#about">GET TO KNOW ME <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero-bottom-grid">
+        <div class="arcade-status">
+          <div><span class="status-key">01 / VISUAL</span><strong>GRAPHIC DESIGN</strong></div>
+          <div><span class="status-key">02 / DIGITAL</span><strong>UI/UX & WEB</strong></div>
+          <div><span class="status-key">03 / PLAY</span><strong>INTERACTIVE IDEAS</strong></div>
+        </div>
+        <div class="hero-bottom">
+          <span>BASED IN SAMARAHAN, SARAWAK</span>
+          <a href="#contact">AVAILABLE FOR PROJECT COLLABORATIONS ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="section-label"><span>02 / SELECTED WORK</span><span>EXPLORE BY DISCIPLINE</span></div>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PROJECT ARCHIVE</p>
+          <h2 id="projectsTitle">CHOOSE YOUR<br>LEVEL<span class="accent-dot">.</span></h2>
+        </div>
+        <p class="section-intro">Browse projects by discipline. Each section gathers related work, process notes and the tools behind the outcome.</p>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card category-graphic" href="projects/graphic-design.html">
+          <span class="category-number">01 / VISUAL COMMUNICATION</span>
+          <div class="category-art art-poster" aria-hidden="true"><span>TYPE</span><span>FORM</span><span>IDEA</span></div>
+          <h3>Graphic Design</h3>
+          <p>Posters, publicity materials, branding and visual communication.</p>
+          <span class="category-link">EXPLORE PROJECTS <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="category-card category-game" href="projects/game-development.html">
+          <span class="category-number">02 / INTERACTIVE PLAY</span>
+          <div class="category-art art-game" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Game Development</h3>
+          <p>Game concepts, mechanics, prototypes and interactive experiences.</p>
+          <span class="category-link">EXPLORE PROJECTS <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="category-card category-web" href="projects/web-applications.html">
+          <span class="category-number">03 / WEB SYSTEMS</span>
+          <div class="category-art art-web" aria-hidden="true"><span></span><span></span><span></span></div>
+          <h3>Web Applications</h3>
+          <p>Websites, frontend development and functional digital systems.</p>
+          <span class="category-link">EXPLORE PROJECTS <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="category-card category-mobile" href="projects/mobile-applications.html">
+          <span class="category-number">04 / MOBILE FIRST</span>
+          <div class="category-art art-mobile" aria-hidden="true"><span></span><span></span></div>
+          <h3>Mobile Applications</h3>
+          <p>Mobile interfaces, app concepts and application prototypes.</p>
+          <span class="category-link">EXPLORE PROJECTS <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="category-card category-uiux" href="projects/ui-ux.html">
+          <span class="category-number">05 / HUMAN + INTERFACE</span>
+          <div class="category-art art-uiux" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>UI/UX Design</h3>
+          <p>User research, wireframes, interface design and usability.</p>
+          <span class="category-link">EXPLORE PROJECTS <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="section-label"><span>03 / PLAYER PROFILE</span><span>ABOUT THE CREATOR</span></div>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CHARACTER PROFILE</p>
+          <h2 id="aboutTitle">THE PERSON<br>BEHIND THE PIXELS<span class="accent-dot">.</span></h2>
+        </div>
+        <p class="section-intro">Creative practice, technical curiosity and the experiences that shape how I approach a project.</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-intro">
+          <div class="profile-panel">
+            <span class="profile-code">PLAYER PROFILE / ND-001</span>
+            <div class="profile-monogram">N<span>.</span>D</div>
+            <p class="profile-role">COMPUTER SCIENCE AND IT : MULTIMEDIA COMPUTING STUDENT<br></p>
+            <p class="profile-location">BASED: KOTA SAMARAHAN / SARAWAK / MALAYSIA</p>
+          </div>
+          <p class="about-lead">I enjoy making digital experiences that bring visual thinking and technology together.</p>
+          <p>My background spans graphic design, student organisation publicity, interface design and computing projects. I am continuing to build my technical skills while learning how to make design decisions that serve a clear purpose.</p>
+          <p>I value experimentation, collaboration and steady improvement. This portfolio documents selected work and the process behind it.</p>
+          <div class="build-log">
+            <div class="build-log-heading"><span class="status-dot" aria-hidden="true"></span> CURRENT BUILD LOG</div>
+            <p>Learning by making: strengthening frontend development, interaction design and project documentation.</p>
+          </div>
+        </div>
+
+        <div class="about-details">
+          <div class="detail-block">
+            <p class="detail-label">01 / SKILL SET</p>
+            <h3>DESIGN & VISUALS</h3>
+            <p class="skill-list">Graphic design · Typography · Visual communication · Social media design</p>
+            <h3>INTERFACE & DEVELOPMENT</h3>
+            <p class="skill-list">UI/UX fundamentals · Wireframing · HTML · CSS · JavaScript · C++ fundamentals</p>
+            <h3>TOOLS & WORKFLOW</h3>
+            <p class="skill-list">Figma · Adobe creative tools · Prototyping · Documentation · Team collaboration</p>
+          </div>
+
+          <div class="detail-block">
+            <p class="detail-label">02 / EDUCATION</p>
+            <h3>Bachelor of Computer Science (Multimedia Computing)</h3>
+            <p>Universiti Malaysia Sarawak (UNIMAS) · October 2024 – Present</p>
+            <h3>Diploma in Computer Science & Mathematics</h3>
+            <p>Universiti Teknologi MARA (UiTM), Sarawak · March 2021 – September 2023</p>
+          </div>
+
+          <div class="detail-block">
+            <p class="detail-label">03 / EXPERIENCE & CONTRIBUTIONS</p>
+            <h3>Freelance Graphic Designer</h3><p>Rune Codes Academy · January – February 2026</p>
+            <h3>Media & Publicity Secretariat Designer</h3><p>PERTEKMA · February 2025 – January 2026</p>
+            <h3>Administrative Assistant</h3><p>Borneo Region FJKT48 Malaysia Official Fanbase · December 2023 – March 2025</p>
+            <h3>Social Media Designer</h3><p>AIESEC in Kuching · October 2024 – April 2025</p>
+            <h3>Media Ministry Designer</h3><p>HOPE Church Kota Samarahan · April 2025 – Present</p>
+          </div>
+
+          <div class="detail-block">
+            <p class="detail-label">04 / LANGUAGES</p>
+            <p class="skill-list">English · Bahasa Melayu · Iban · Mandarin</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="section-label"><span>04 / CONNECTION ESTABLISHED</span><span>LET'S TALK</span></div>
+      <div class="contact-content">
+        <p class="eyebrow">NEXT PLAYER?</p>
+        <h2 id="contactTitle">HAVE AN IDEA?<br>LET'S BUILD IT<span class="accent-dot">.</span></h2>
+        <p class="contact-description">Have a project, collaboration or opportunity in mind? Send a message and tell me what you're working on.</p>
+        <a class="button button-primary" href="mailto:nazariodivaio@gmail.com">EMAIL ME <span aria-hidden="true">↗</span></a>
+        <div class="contact-links">
+          <a href="mailto:nazariodivaio@gmail.com">NAZARIODIVAIO@GMAIL.COM</a>
+          <button class="copy-email" type="button" data-copy-email="nazariodivaio@gmail.com">COPY EMAIL <span aria-hidden="true">↗</span></button>
+          <span class="copy-email-status" role="status" aria-live="polite" hidden></span>
+          <a href="https://www.linkedin.com/in/nazario-divaio-noel" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+          <span id="localTime" class="local-time">SARAWAK / --:--</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-mark">N<span>.</span>D</p>
+    <p>DESIGNED & BUILT BY NAZARIO DIVAIO · <span id="currentYear">2026</span></p>
+    <p>DESIGN / CODE / PLAY</p>
+  </footer>
+
+  <div class="utility-controls" aria-label="Display controls">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">☼ LIGHT MODE</button>
+    <button class="back-to-top" id="backToTop" type="button" hidden>↑ BACK TO TOP</button>
+  </div>
+</body>
+</html>
