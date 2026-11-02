@@ -196,9 +196,11 @@ main, .site-footer {
 .profile-code { color: var(--muted); font-size: .68rem; letter-spacing: .06em; }
 .profile-identity { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: clamp(16px, 2vw, 28px); margin-top: 18px; }
 .profile-monogram {
-  display: grid; width: clamp(88px, 9vw, 124px); aspect-ratio: 1; place-items: center;
-  margin: 0; border: 2px solid var(--lime); background: var(--bg);
-  font-family: "Black Ops One", cursive; font-size: clamp(2.4rem, 4vw, 3.8rem); line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  width: clamp(88px, 9vw, 124px); aspect-ratio: 1; margin: 0;
+  border: 2px solid var(--lime); background: var(--bg);
+  font-family: "Black Ops One", cursive; font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 1; letter-spacing: -.08em; white-space: nowrap;
 }
 .profile-monogram span { color: var(--lime); }
 .profile-summary { min-width: 0; }
@@ -312,7 +314,7 @@ main, .site-footer {
   .about-layout { grid-template-columns: 1fr; gap: 34px; margin-top: 32px; }
   .profile-panel { margin-bottom: 24px; }
   .profile-identity { grid-template-columns: 82px minmax(0, 1fr); gap: 16px; }
-  .profile-monogram { width: 82px; font-size: 2.4rem; }
+  .profile-monogram { width: 82px; font-size: 2rem; }
   .profile-role { font-size: .95rem; }
   .profile-location { font-size: .75rem; }
   .about-lead { font-size: clamp(1.45rem, 6vw, 1.9rem); }
