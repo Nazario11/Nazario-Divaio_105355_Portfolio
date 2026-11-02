@@ -21,8 +21,9 @@
       <span class="sidebar-label">DESIGN / CODE / PLAY</span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mainNav" aria-expanded="false">
-      MENU <span aria-hidden="true">+</span>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Hide navigation">
+      <span class="menu-label">HIDE NAV</span>
+      <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
     </button>
 
     <nav class="main-nav" id="mainNav" aria-label="Main navigation">
@@ -137,9 +138,13 @@
         <div class="about-intro">
           <div class="profile-panel">
             <span class="profile-code">PLAYER PROFILE / ND-001</span>
-            <div class="profile-monogram">N<span>.</span>D</div>
-            <p class="profile-role">COMPUTER SCIENCE AND IT : MULTIMEDIA COMPUTING STUDENT<br></p>
-            <p class="profile-location">BASED: KOTA SAMARAHAN / SARAWAK / MALAYSIA</p>
+            <div class="profile-identity">
+              <div class="profile-monogram" aria-hidden="true">N<span>.</span>D</div>
+              <div class="profile-summary">
+                <p class="profile-role">MULTIMEDIA COMPUTING STUDENT</p>
+                <p class="profile-location">KOTA SAMARAHAN / SARAWAK / MALAYSIA</p>
+              </div>
+            </div>
           </div>
           <p class="about-lead">I enjoy making digital experiences that bring visual thinking and technology together.</p>
           <p>My background spans graphic design, student organisation publicity, interface design and computing projects. I am continuing to build my technical skills while learning how to make design decisions that serve a clear purpose.</p>
@@ -161,7 +166,7 @@
             <p class="skill-list">Figma · Adobe creative tools · Prototyping · Documentation · Team collaboration</p>
           </div>
 
-          <div class="detail-block">
+          <div class="detail-block detail-education">
             <p class="detail-label">02 / EDUCATION</p>
             <h3>Bachelor of Computer Science (Multimedia Computing)</h3>
             <p>Universiti Malaysia Sarawak (UNIMAS) · October 2024 – Present</p>
@@ -169,7 +174,7 @@
             <p>Universiti Teknologi MARA (UiTM), Sarawak · March 2021 – September 2023</p>
           </div>
 
-          <div class="detail-block">
+          <div class="detail-block detail-experience">
             <p class="detail-label">03 / EXPERIENCE & CONTRIBUTIONS</p>
             <h3>Freelance Graphic Designer</h3><p>Rune Codes Academy · January – February 2026</p>
             <h3>Media & Publicity Secretariat Designer</h3><p>PERTEKMA · February 2025 – January 2026</p>
@@ -195,9 +200,9 @@
         <a class="button button-primary" href="mailto:nazariodivaio@gmail.com">EMAIL ME <span aria-hidden="true">↗</span></a>
         <div class="contact-links">
           <a href="mailto:nazariodivaio@gmail.com">NAZARIODIVAIO@GMAIL.COM</a>
+          <a href="https://www.linkedin.com/in/nazario-divaio-noel" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
           <button class="copy-email" type="button" data-copy-email="nazariodivaio@gmail.com">COPY EMAIL <span aria-hidden="true">↗</span></button>
           <span class="copy-email-status" role="status" aria-live="polite" hidden></span>
-          <a href="https://www.linkedin.com/in/nazario-divaio-noel" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
           <span id="localTime" class="local-time">SARAWAK / --:--</span>
         </div>
       </div>

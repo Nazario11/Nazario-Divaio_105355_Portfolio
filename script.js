@@ -34,6 +34,7 @@ updateScrollProgress();
 /* Mobile navigation — shared by the homepage and category archives. */
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
+const menuLabel = menuToggle && menuToggle.querySelector(".menu-label");
 const navLinks = document.querySelectorAll(".nav-link");
 let previousBodyOverflow = "";
 let mobileMenuBackdrop = null;
@@ -51,6 +52,7 @@ if (menuToggle && mainNav) {
 
   function openMobileMenu() {
     if (!isMobileNavigation()) return;
+    document.body.classList.remove("desktop-nav-collapsed");
     previousBodyOverflow = document.body.style.overflow;
     document.body.classList.add("menu-open");
     document.body.style.overflow = "hidden";
@@ -58,7 +60,8 @@ if (menuToggle && mainNav) {
     mobileMenuBackdrop.hidden = false;
     menuToggle.setAttribute("aria-expanded", "true");
     menuToggle.setAttribute("aria-label", "Close navigation menu");
-    menuToggle.innerHTML = 'CLOSE <span aria-hidden="true">−</span>';
+    if (menuLabel) menuLabel.textContent = "CLOSE NAV";
+    mainNav.inert = false;
     const firstLink = mainNav.querySelector("a[href]");
     if (firstLink) firstLink.focus();
   }
@@ -71,19 +74,36 @@ if (menuToggle && mainNav) {
     document.body.style.overflow = previousBodyOverflow;
     if (mobileMenuBackdrop) mobileMenuBackdrop.hidden = true;
     menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "Open navigation menu");
-    menuToggle.innerHTML = 'MENU <span aria-hidden="true">+</span>';
+    menuToggle.setAttribute("aria-label", isMobileNavigation() ? "Open navigation menu" : "Hide navigation");
+    if (menuLabel) menuLabel.textContent = isMobileNavigation() ? "MENU" : "HIDE NAV";
     if (restoreFocus && wasOpen) menuToggle.focus();
   }
 
-  menuToggle.setAttribute("aria-label", "Open navigation menu");
+  function setDesktopNavigationCollapsed(collapsed) {
+    document.body.classList.toggle("desktop-nav-collapsed", collapsed);
+    mainNav.inert = collapsed;
+    menuToggle.setAttribute("aria-expanded", String(!collapsed));
+    menuToggle.setAttribute("aria-label", collapsed ? "Open navigation" : "Hide navigation");
+    if (menuLabel) menuLabel.textContent = collapsed ? "OPEN NAV" : "HIDE NAV";
+  }
+
+  menuToggle.setAttribute("aria-label", isMobileNavigation() ? "Open navigation menu" : "Hide navigation");
+  if (menuLabel) menuLabel.textContent = isMobileNavigation() ? "MENU" : "HIDE NAV";
+  menuToggle.setAttribute("aria-expanded", String(!isMobileNavigation()));
+  if (!isMobileNavigation()) mainNav.inert = false;
   menuToggle.addEventListener("click", () => {
-    if (mainNav.classList.contains("is-open")) closeMobileMenu(false);
-    else openMobileMenu();
+    if (isMobileNavigation()) {
+      if (mainNav.classList.contains("is-open")) closeMobileMenu(false);
+      else openMobileMenu();
+      return;
+    }
+    setDesktopNavigationCollapsed(!document.body.classList.contains("desktop-nav-collapsed"));
   });
 
   mobileMenuBackdrop.addEventListener("click", () => closeMobileMenu(true));
-  navLinks.forEach(link => link.addEventListener("click", () => closeMobileMenu(false)));
+  navLinks.forEach(link => link.addEventListener("click", () => {
+    if (isMobileNavigation()) closeMobileMenu(false);
+  }));
 
   document.addEventListener("keydown", event => {
     if (!mainNav.classList.contains("is-open")) return;
@@ -118,8 +138,18 @@ if (menuToggle && mainNav) {
   });
 
   window.addEventListener("resize", () => {
-    if (!isMobileNavigation() && mainNav.classList.contains("is-open")) {
-      closeMobileMenu(false);
+    if (isMobileNavigation()) {
+      document.body.classList.remove("desktop-nav-collapsed");
+      mainNav.inert = false;
+      menuToggle.setAttribute("aria-expanded", String(mainNav.classList.contains("is-open")));
+      menuToggle.setAttribute("aria-label", mainNav.classList.contains("is-open") ? "Close navigation menu" : "Open navigation menu");
+      if (menuLabel) menuLabel.textContent = mainNav.classList.contains("is-open") ? "CLOSE NAV" : "MENU";
+    } else {
+      if (mainNav.classList.contains("is-open")) closeMobileMenu(false);
+      mainNav.inert = document.body.classList.contains("desktop-nav-collapsed");
+      menuToggle.setAttribute("aria-expanded", String(!mainNav.inert));
+      menuToggle.setAttribute("aria-label", mainNav.inert ? "Open navigation" : "Hide navigation");
+      if (menuLabel) menuLabel.textContent = mainNav.inert ? "OPEN NAV" : "HIDE NAV";
     }
   });
 }
