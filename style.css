@@ -249,6 +249,8 @@ main, .site-footer {
 .case-card { min-width: 0; border: 2px solid var(--line); background: var(--panel); box-shadow: 5px 5px 0 var(--shadow); }
 .case-image { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
 .case-image-wide { aspect-ratio: auto; object-fit: contain; background: var(--panel-light); }
+.membership-gallery { display: flex; flex-wrap: wrap; gap: 16px; padding: 16px; }
+.membership-gallery .case-image { flex: 1 1 calc(50% - 8px); max-width: calc(50% - 8px); aspect-ratio: auto; object-fit: contain; }
 .case-art { display: flex; min-height: 220px; align-items: flex-end; padding: 20px; color: #111; background: var(--lime); }
 .case-card:nth-child(5n+2) .case-art { background: var(--orange); }
 .case-card:nth-child(5n+3) .case-art { background: var(--blue); }
